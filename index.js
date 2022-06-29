@@ -4,7 +4,7 @@ const express =  require("express");
 const app=express();
 const cookieParser=require("cookie-parser")
 
-const port=8000;
+const port=8000 || process.env.PORT;
 const expressLayouts=require("express-ejs-layouts")
 
 //importing mongoose modules
