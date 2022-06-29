@@ -1,0 +1,95 @@
+
+<link rel="stylesheet" href="/css/loginform.css">
+<!-- <p class="webname">Codeial</p> -->
+<p class="webname">
+    <!-- <i class="far fa-eye "></i> -->
+    <!-- <img src="https://img.icons8.com/external-justicon-lineal-color-justicon/64/000000/external-chat-notifications-justicon-lineal-color-justicon.png"/> -->
+    <span class="loader"></span>
+    
+    Codeial</p>
+
+<!-- //remember to create an action for the route entered -->
+<!-- in form you use post method so in route use post method not get -->
+
+<div class="container">
+    <h1>Sign up</h1>
+    <form action="/users/create" method="POST">
+        <div class="form-control">
+            <input type="text" name="name" 
+            placeholder="Name"
+            required autofocus>
+            <!-- <label>Name</label> -->
+        </div>
+        <div class="form-control">
+
+            <input type="email" name="email" 
+            placeholder="Email"
+            required autofocus>
+            <!-- <h3>Email</h3> -->
+            <!-- <label>Email</label> -->
+            
+        </div>
+        <div class="form-control">
+            <input type="password" name="password" 
+            placeholder="Password"
+             required autofocus>
+             <!-- <label>password</label> -->
+  
+        </div>
+        <div class="form-control">
+            <input type="password" name="confirm_password"
+            placeholder="Confirm Password"
+             
+             required autofocus>
+             <!-- <label>Confirm Password</label> -->
+
+        </div>
+        <!-- <input type="text" name="name" placeholder="Your name" required autofocus>
+        <input type="email" name="email" placeholder="Your email" required autofocus>
+        
+        <input type="password" name="password" placeholder="Password" required autofocus>
+        <input type="password" name="confirm_password" placeholder="Confirm Password" required autofocus> -->
+        <input class="btn"type="submit" value="Sign-up"></input>
+    </form>
+    <br>
+
+    <p style="font-weight: bolder;">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+         Or
+    </p>
+    <br>
+
+    <!-- <p>
+        <a href="/users/auth/google">Google Sign In/Sign Up</a>
+    </p> -->
+
+    <button style="width: 100%;padding-top: 5px;margin: 0px;font-weight: bolder;border-radius: 15px;background-color: white;padding-bottom: 5px;">
+
+        <a href="/users/auth/google">
+            <i class="fab fa-google fa-2x"></i>
+            <!-- <img class="Google" src="https://cdn-icons-png.flaticon.com/128/300/300221.png" height="30px"> -->
+
+            <!-- &nbsp; -->
+            <!-- <i class="fab fa-google"></i> -->
+            
+                Google Sign In
+            
+            </a>
+
+</button>
+
+
+</div>
+<script src="script.js"></script>
+
+
+
+<!-- <label >
+    <span style="transition-delay: 0ms;">E</span>
+    <span style="transition-delay: 50ms;">m</span>
+    <span style="transition-delay: 100ms;">a</span>
+    <span style="transition-delay: 150ms;">i</span>
+    <span style="transition-delay: 200ms;">l</span>
+
+</label> -->

@@ -1,0 +1,178 @@
+@import 'colors';
+@import 'media-queries';
+
+%align-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+// .navbar_menu{
+//   ul{
+//     padding: 0;
+//     text-decoration: none;
+//     list-style: none;
+   
+// }
+// }
+.li{
+  background-color: #007cb9;
+  text-decoration: none;
+//     list-style: none;
+  // color: white;
+}
+
+
+.navbar_menu--links{
+  text-decoration: none;
+  list-style: none;
+  // color: white;
+  color: white;
+  padding-bottom:2px;
+  
+}
+.header-img{
+  border-radius: 100%;
+}
+.navbar_menu--links:hover{
+  // color:orangered ;
+  transition-duration: 2s;
+  transition: all 0.3s;
+}
+.navbar {
+//   ul{
+//     padding: 0;
+//    text-decoration: none;
+//     list-style: none;
+   
+// }
+  // background: $light;
+  
+  // background: #8E2DE2;  /* fallback for old browsers */
+  // background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+  // background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+
+
+
+  // background: linear-gradient(109.6deg, rgb(14, 11, 56) 11.2%, rgb(239, 37, 37) 91.1%);
+
+  // background: linear-gradient(72.3deg, rgb(29, 7, 64) 8.5%, rgb(253, 105, 139) 92.2%);
+  // background: linear-gradient(109.6deg, rgb(43, 1, 91) 13.4%, rgb(122, 2, 54) 100.2%);
+
+
+
+  // background: #000000;  /* fallback for old browsers */
+  // background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  // background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  // background: #000000;  /* fallback for old browsers */
+  // background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  // background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: black;
+background-color: black;
+  
+
+
+
+
+  //  background: #000428;  /* fallback for old browsers */
+  // background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+  // background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  ;
+
+
+  height: 100px;
+  margin-top: 0;
+  margin-right: 0;
+  color: $light;
+  display: flex;
+  justify-content:space-between;
+  padding-top: 5px;
+  // padding: 0.5rem calc((100vw - 1200px) / 2);
+  z-index: 10;
+  position: relative;
+  text-decoration: none;
+   list-style: none;
+
+  &__logo {
+    color: $dark;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    margin-left: 24px;
+    @extend %align-center;
+  }
+
+  &__bars {
+    opacity: 0;
+
+    @include tablet {
+      color: $dark;
+      opacity: 1;
+      position: absolute;
+      top: 22px;
+      right: 20px;
+      font-size: 2rem;
+    }
+  }
+
+  &__menu {
+    @extend %align-center;
+    list-style: none;
+    text-align: center;
+    margin-right: 24px;
+    
+    padding: 0;
+     text-decoration: none;
+      list-style: none;
+     
+  
+
+    @include tablet {
+      display: none;
+    }
+
+    &--links {
+      // color: $dark;
+      @extend %align-center;
+      justify-content: center;
+      text-decoration: none;
+      padding: 0 1rem;
+
+      &:hover {
+        color: $lime;
+        transition: all 0.3s ease;
+      }
+    }
+
+    #button {
+      padding: 12px 24px;
+      border: none;
+      outline: none;
+      border-radius: 4px;
+      background: $lime;
+      margin-left: 16px;
+      color: $light;
+
+      &:hover {
+        background: $orangeRed;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+ .navbar{
+  
+   justify-content:stretch;
+   width: 100%;
+ }
+ .navbar_menu--links{
+  justify-content:stretch;
+ }
+
+
+  
+  
+}
+

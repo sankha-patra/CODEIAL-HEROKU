@@ -1,0 +1,125 @@
+<!-- <link rel="stylesheet" href="/css/header.css"> -->
+<!-- <link rel="stylesheet" href="/css/styles.css"> -->
+<!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> -->
+<header>
+    <!-- <link rel="stylesheet" href="layout.css"> -->
+    <!-- <h1><%=title %></h1> -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Page Header -->
+    <div class="header" >
+        <ul>
+            <% if (locals.user) {%>
+    
+                <nav class="navbar" style="align-items: center;">
+                    <h1 class="webname" style="color:white;">
+                        <!-- <img src="images/logo" alt=""> -->
+                        <img src="https://img.icons8.com/external-justicon-lineal-color-justicon/32/000000/external-chat-notifications-justicon-lineal-color-justicon.png" style="height: 20%; " st/>
+                        <!-- <i class="far fa-eye "></i> -->
+                        Codeial</h1>
+                    <!-- <i class="far fa-eye fa-2x"></i>
+                     <img class="navbar_bars" src="/images/slack.png" alt=""> -->
+                    <!-- Codeial  -->
+                   
+
+                    
+                        <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+
+                        <!-- &nbsp<h1><%=title %></h1> -->
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h1 style="color:#f95959 ;"><%=title %></h1>&nbsp;&nbsp;&nbsp;
+                        
+                        
+                        
+                       
+                    <div class="navbar_bars">
+                        <!-- <h1><%=title %></h1> -->
+                        <!-- <i class="fas fa-bars"></i> -->
+                        <div class="navbar_menu" style="align-items:baseline;">
+
+
+                            
+                           
+                            <!-- <i class="fas fa-user" style="color:#00bbf0 ;"></i>
+                            <a href="/users/profile/:profile_user.id" class="navbar_menu--links">Profile</a> -->
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="/" class="navbar_menu--links">
+                                <i class="fas fa-home fa-2x"></i>
+                                </a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="/users/sign-out" class="navbar_menu--links">
+                                <i class="fas fa-sign-out-alt fa-2x"></i>
+                                </a>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <i class="mssg fa fa-search fa-2x fa-2x" ></i>
+                            <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="/users/profile/<%= user._id %>">
+
+                                <% if(user.avatar){ %>
+                                    <img  class="header-img" alt="img" width="30" height="30"  src="<%=user.avatar%>" width="40" height="40" style="border:2px solid black;">
+                               
+                                <% }else {%>
+                                
+                                    <img src="https://cdn1.iconfinder.com/data/icons/user-pictures/100/unknown-512.png" class='header-img' width="40" height="40">
+                                <% } %> -->
+                          
+                        </a>
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                             <!-- <%= user.name %> -->
+                            <!-- <li><p>Email:<%= user.email %></p></li> -->
+    
+                         </div>
+                    </div>
+                 </nav> 
+            
+    
+            <!-- <li><p>Name:<%= user.name %></p></li>
+            <li><p>Email:<%= user.email %></p></li> -->
+    
+            
+            
+    
+    
+            <!-- <li><a href="/users/sign-out">Sign Out</a></li> -->
+            <% }else {%>
+                 <!-- navbar section -->
+            <nav class="navbar">
+                <!-- <i class="far fa-eye"></i> -->
+                
+                Codeial
+                <div class="navbar_bars">
+                    <i class="fas fa-bars"></i>
+                    <div class="navbar_menu">
+                        <!-- <form action="/users/sign-in" method="get">
+                            <input type="submit" value="Sign In"></input>
+                        </form>
+    
+                        <form action="/users/sign-up" method="get">
+                            <input type="submit" value="Sign Up"></input>
+                        </form> -->
+                        
+    
+                    </div>
+                </div>
+             </nav>
+    
+                <!-- <li>
+                    <form action="/users/sign-in" method="get">
+                        <input type="submit" value="Sign In"></input>
+                    </form>
+                </li>
+                <br>
+                <li>
+                    <form action="/users/sign-up" method="get">
+                        <input type="submit" value="Sign Up"></input>
+                    </form>
+                </li> -->
+                <!-- <li><a href="/users/sign-in">Sign In</a></li>
+                <li><a href="/users/sign-up">Sign Up</a></li> -->
+    
+                <% }%>
+    
+        </ul>
+    </div>
+    
+</header>

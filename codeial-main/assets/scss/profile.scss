@@ -1,0 +1,88 @@
+// body{
+//     align-items: center;
+//     margin: 0;
+   
+//     color: rgb(80, 80, 80);
+  
+//    height: 100vh;
+//    position: relative;
+//    bottom: 0;
+    // background: #02AAB0;  /* fallback for old browsers */
+    // background: -webkit-linear-gradient(to right, #00CDAC, #02AAB0); 
+    // background: linear-gradient(to right, #00CDAC, #02AAB0);
+    
+    // }
+   
+    
+    .profile{
+        
+        // min-height: 100vh; 
+        margin-top: auto;
+        text-align: center;
+        margin-top: 3%;
+        color: black;
+        border:solid 5px black;
+        background-color:#fff;
+        // border-radius:  25px; ;
+       border-radius: 5%;
+        padding:15px;
+        box-shadow:0 2px 20px -3px black;
+        max-width: 25%;
+        margin-left: 38%;
+        margin-bottom: 25%;
+        min-height: 55%;
+        min-width: min-content;
+       
+        
+        
+        
+    }
+    .form_Control input {
+        background-color: transparent;
+        // border: 0;
+        border: 5px #4A00E0 solid;
+        display: block;
+        border-radius: 15px;
+        width: 100%;
+        padding: 15px 0;
+        font-size: 20px;
+      //   color: #fff;
+        // color:#00bbf0 ;
+       
+        color:black ;
+      }
+    // .profileclass{
+    //     min-height: 100vh; 
+     
+    // }
+    .profilepic{
+        border-radius: 100%;
+        width: 40%;
+        border: 5px solid #4A00E0;
+       
+        box-shadow:0 2px 20px -3px black
+
+    }
+   
+   
+
+ul{
+    list-style-type: none;
+}
+@media screen and (max-width: 600px) {
+
+    
+
+    .he{
+
+        width: 300px;
+    }
+    .profilepic{
+        // border-radius: 100%;
+        size: 20%;
+
+    }
+  
+
+    
+  }
